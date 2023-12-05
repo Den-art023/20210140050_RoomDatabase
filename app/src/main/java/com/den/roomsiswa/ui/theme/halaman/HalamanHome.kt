@@ -24,7 +24,12 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import com.den.roomsiswa.R
 import com.den.roomsiswa.data.Siswa
+import com.den.roomsiswa.navigasi.DestinasiNavigasi
 
+object DestinasiHome: DestinasiNavigasi{
+    override val route = "home"
+    override val titleRes = R.string.app_name
+}
 @Composable
 fun BodyHome(
     modifier: Modifier,
