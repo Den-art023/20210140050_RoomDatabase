@@ -19,6 +19,12 @@ import androidx.compose.ui.text.input.KeyboardType
 import com.den.roomsiswa.R
 import com.den.roomsiswa.model.DetailSiswa
 import com.den.roomsiswa.model.UIStateSiswa
+import com.den.roomsiswa.navigasi.DestinasiNavigasi
+
+object DestinasiEntry: DestinasiNavigasi{
+    override val route= "item_entry"
+    override val titleRes = R.string.entry_siswa
+}
 
 @Composable
 fun EntrySiswaBody(
