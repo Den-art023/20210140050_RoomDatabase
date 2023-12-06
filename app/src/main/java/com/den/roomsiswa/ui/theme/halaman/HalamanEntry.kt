@@ -117,6 +117,7 @@ fun FormInputSiswa(
             onValueChange = { onValueChange(detailSiswa.copy(nama = it)) },
             label = { Text(text = stringResource(id = R.string.nama)) },
             modifier = Modifier.fillMaxWidth(),
+            enabled = enabled,
             singleLine = true
         )
         OutlinedTextField(
@@ -124,6 +125,7 @@ fun FormInputSiswa(
             onValueChange = { onValueChange(detailSiswa.copy(alamat = it)) },
             label = { Text(text = stringResource(id = R.string.alamat)) },
             modifier = Modifier.fillMaxWidth(),
+            enabled = enabled,
             singleLine = true
         )
         OutlinedTextField(
@@ -132,6 +134,7 @@ fun FormInputSiswa(
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             label = { Text(text = stringResource(id = R.string.telpon)) },
             modifier = Modifier.fillMaxWidth(),
+            enabled = enabled,
             singleLine = true
         )
         if (enabled) {
